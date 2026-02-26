@@ -1,157 +1,156 @@
-# 🔥 SUPER BOT MODPACK ULTRA
+A modern and intuitive GUI application to create Minecraft modpacks automatically through the Modrinth API.
 
-Uma aplicação GUI moderna e intuitiva para criar Minecraft modpacks automaticamente através da API Modrinth.
+## ✨ Features
 
-## ✨ Características
+- **Modern Interface**: Built with CustomTkinter for a premium visual experience
+- **Smart Download**: Speed control system with 4 different modes
+- **Real-Time Progress**: Monitor speed, remaining time, and progress
+- **Safe Shutdown**: Cancel downloads at any time
+- **Multiple Categories**: Choose from tech, magic, adventure
+- **Flexibility**: Configure mod quantity (10-200)
 
-- **Interface Moderna**: Built com CustomTkinter para uma experiência visual premium
-- **Download Inteligente**: Sistema de controle de velocidade com 4 modos diferentes
-- **Progresso em Tempo Real**: Monitore velocidade, tempo restante e progresso
-- **Parada Segura**: Cancele downloads a qualquer momento
-- **Múltiplas Categorias**: Escolha entre tech, magic, adventure
-- **Flexibilidade**: Configure quantidade de mods (10-200)
+## 🚀 Installation
 
-## 🚀 Instalação
-
-### Pré-requisitos
-- Python 3.8 ou superior
+### Prerequisites
+- Python 3.8 or higher
 - pip
 
-### Passos
+### Steps
 
-1. **Clone ou baixe o projeto**
+1. **Clone or download the project**
 ```bash
-cd seu-diretorio
+cd your-directory
 ```
 
-2. **Instale as dependências**
+2. **Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-## 💻 Uso
+## 💻 Usage
 
-### Executar a Aplicação
+### Run the Application
 
 ```bash
 python superbot_gui.py
 ```
 
-### Passos para Criar um Modpack
+### Steps to Create a Modpack
 
-1. **Selecione a Categoria**: tech, magic ou adventure
-2. **Configure a Quantidade**: Use o slider para escolher entre 10-200 mods
-3. **Escolha o Modo**: 
-   - **Slow** (512 KB/s) - Conexão lenta
-   - **Normal** (2 MB/s) - Padrão recomendado
-   - **Fast** (5 MB/s) - Conexão rápida
-   - **Turbo** (Ilimitado) - Máxima velocidade
-4. **Clique em "Criar Modpack"** para iniciar o download
-5. **Use "Parar"** se precisar cancelar em qualquer momento
+1. **Select the Category**: tech, magic, or adventure
+2. **Configure the Quantity**: Use the slider to choose between 10-200 mods
+3. **Choose the Mode**: 
+   - **Slow** (512 KB/s) - Slow connection
+   - **Normal** (2 MB/s) - Recommended default
+   - **Fast** (5 MB/s) - Fast connection
+   - **Turbo** (Unlimited) - Maximum speed
+4. **Click "Create Modpack"** to start the download
+5. **Use "Stop"** if you need to cancel at any time
 
-Os mods serão salvos em: `C:\Users\seu-usuario\Downloads\Modpack-{versao}-{loader}-{categoria}`
+Mods will be saved to: `C:\Users\your-user\Downloads\Modpack-{version}-{loader}-{category}`
 
-## 📁 Estrutura de Arquivos
+## 📁 File Structure
 
 ```
 .
-├── superbot_gui.py          # Aplicação principal com GUI
-├── speed_controller.py      # Módulo de controle de velocidade
-├── requirements.txt         # Dependências do projeto
-└── README.md               # Este arquivo
+├── superbot_gui.py          # Main application with GUI
+├── speed_controller.py      # Speed control module
+├── requirements.txt         # Project dependencies
+└── README.md               # This file
 ```
 
-## 🔧 Arquivos do Projeto
+## 🔧 Project Files
 
 ### superbot_gui.py
-Aplicação principal que contém:
-- **Classe SuperBot**: Gerencia a interface gráfica
-- Métodos para download e controle de progresso
-- Integração com API Modrinth
+Main application containing:
+- **SuperBot Class**: Manages the graphical interface
+- Methods for download and progress control
+- Modrinth API integration
 
 ### speed_controller.py
-Módulo de controle de velocidade:
-- **SpeedController**: Limita e monitora a velocidade de download
-- **SpeedPresets**: Configurações pré-definidas de velocidade
+Speed control module:
+- **SpeedController**: Limits and monitors download speed
+- **SpeedPresets**: Pre-defined speed configurations
 
 ## 📊 Interface
 
-A interface está dividida em 4 seções principais:
+The interface is divided into 4 main sections:
 
-### 1. Configurações
-- Seletor de categoria de mods
-- Slider para quantidade de mods
-- Menu de modo de performance
+### 1. Settings
+- Mod category selector
+- Slider for mod quantity
+- Performance mode menu
 
-### 2. Progresso
-- Barra de progresso visual
+### 2. Progress
+- Visual progress bar
 
-### 3. Informações
-- Status atual do download
-- Velocidade em tempo real (MB/s)
-- Tempo restante estimado
+### 3. Information
+- Current download status
+- Real-time speed (MB/s)
+- Estimated remaining time
 
-### 4. Botões de Ação
-- **Criar Modpack**: Inicia o download
-- **Parar**: Cancela o download em andamento
+### 4. Action Buttons
+- **Create Modpack**: Start the download
+- **Stop**: Cancel the running download
 
-## ⚡ Modos de Performance
+## ⚡ Performance Modes
 
-| Modo | Velocidade | Uso |
+| Mode | Speed | Usage |
 |------|-----------|-----|
-| Slow | 512 KB/s | Conexões muito lentas |
-| Normal | 2 MB/s | Uso geral (padrão) |
-| Fast | 5 MB/s | Conexões rápidas |
-| Turbo | Ilimitado | Máxima velocidade |
+| Slow | 512 KB/s | Very slow connections |
+| Normal | 2 MB/s | General use (default) |
+| Fast | 5 MB/s | Fast connections |
+| Turbo | Unlimited | Maximum speed |
 
-## 🌐 API Utilizada
+## 🌐 API Used
 
 - **Modrinth API v2**: https://api.modrinth.com/v2/
-- Busca mods por categoria, versão e carregador
-- Suporta Minecraft 1.21.1 com NeoForge
+- Search mods by category, version, and loader
+- Supports Minecraft 1.21.1 with NeoForge
 
-## 📝 Versão
+## 📝 Version
 
-**Versão**: 1.0.0 Final  
-**Data**: 26 de fevereiro de 2026  
-**Status**: Completo e Testado
+**Version**: 1.0.0 Final  
+**Date**: February 26, 2026  
+**Status**: Complete and Tested
 
-## 🎯 Funcionalidades por Versão
+## 🎯 Features by Version
 
-### v1.0.0 (Atual)
-- ✅ Interface GUI moderna
-- ✅ Download de mods via Modrinth API
-- ✅ Controle de velocidade em 4 níveis
-- ✅ Progresso em tempo real
-- ✅ Parada segura de downloads
-- ✅ Múltiplas categorias
-- ✅ Documentação completa
+### v1.0.0 (Current)
+- ✅ Modern GUI interface
+- ✅ Mod downloads via Modrinth API
+- ✅ Speed control with 4 levels
+- ✅ Real-time progress
+- ✅ Safe download shutdown
+- ✅ Multiple categories
+- ✅ Complete documentation
 
 ## 🐛 Troubleshooting
 
-### Erro de conexão com API
-- Verifique sua conexão com internet
-- Tente novamente mais tarde
-- A API Modrinth pode estar temporariamente indisponível
+### API connection error
+- Check your internet connection
+- Try again later
+- Modrinth API may be temporarily unavailable
 
-### Downloads muito lentos
-- Mude para o modo "Fast" ou "Turbo"
-- Verifique sua conexão de internet
-- Tente em horário de menor uso
+### Very slow downloads
+- Switch to "Fast" or "Turbo" mode
+- Check your internet connection
+- Try during off-peak hours
 
-### Aplicação não abre
-- Confirme que Python 3.8+ está instalado
-- Execute `pip install -r requirements.txt` novamente
-- Verifique permissões de escrita na pasta Downloads
+### Application won't open
+- Confirm Python 3.8+ is installed
+- Run `pip install -r requirements.txt` again
+- Check write permissions in the Downloads folder
 
-## 📞 Suporte
+## 📞 Support
 
-Para reportar bugs ou sugerir melhorias, verifique os logs da aplicação ou consulte a documentação do código.
+To report bugs or suggest improvements, check the application logs or consult the code documentation.
 
-## 📄 Licença
+## 📄 License
 
-Este projeto é fornecido como está, para uso pessoal.
+This project is provided as-is for personal use.
 
 ---
 
-**🔥 Desenvolvido com ❤️ para gamers Minecraft**
+**🔥 Developed with ❤️ for Minecraft gamers**
+
